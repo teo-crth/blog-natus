@@ -24,11 +24,6 @@ router.get('/contact', (req, res)=> {
     res.render(`contact`, {URL, articleData});
 });
 
-router.get('/a-propos', (req, res)=> {
-    let URL = req.url;
-    res.render(`a-propos`, {URL, articleData});
-});
-
 router.get('/article/:articleNumber', (request, response, next) => {
     const articleNumber = request.params.articleNumber;
     const selectedArticle = articleData.find((article, index) => index === parseInt(articleNumber));

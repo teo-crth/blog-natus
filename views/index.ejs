@@ -36,6 +36,7 @@
             <div class="container-article">
                 <div class="unique-categories">
                     <h4 class="category-title">Catégories d'article</h4>
+                    <div class="category-item">Tous les articles</div>
                     <% 
                     <!-- Creation d'un tableau avec les categories snas doublon -->
                     const uniqueCategories = [...new Set(articleData.map(article => article.category))];
@@ -44,6 +45,7 @@
                         <div class="category-item"><%= category %></div>
                     <% }) %>
                 </div>
+                
 
                 <% const sortedArticles = articleData.sort((a, b) => new Date(b.parutionDate) - new Date(a.parutionDate));
                 
