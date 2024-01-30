@@ -241,6 +241,41 @@ footer{
     color: white;
 }
 
+
+/**********CATEGORIES ARTICLE************/
+
+
+.unique-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.category-item {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #508212;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 4rem;
+    text-align: center;
+    margin: 0.3rem;
+
+}
+
+.category-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
 /**********CARD ARTICLE************/
 
 .container-article {
