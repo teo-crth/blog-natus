@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" dir="ltr" />
+        <meta name="author" content="Téo Conrath">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../../public/img/perso-icon.ico" alt="une personne tenant une plante dans sa main">
+        <meta name="description" content="Blog destiné à traiter tous les sujets sous l'angle environnemental et notamment faire en sorte que nos actions du quotidien aient un impact environnemental minimal voir bénéfique">
+        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+        <% if(URL == "/articles"){ %>
+            <link rel="stylesheet" type="text/css" href="/css/articles.css"/>
+        <% } %>
+        <% if( locals.statusCode && locals.statusCode === 404){ %>
+            <link rel="stylesheet" type="text/css" href="/css/404.css"/>
+        <% } %>
+        <title>Blog Natus</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-contener">
+                    <h1 class="__blog-title"><a href="/" aria-label="Retourner à l'accueil">NATUS</a></h1>
+            </div>
+            <nav class="__menu">
+                <ul>
+                    <li class="__nav-li"><a href="/a-propos" aria-label="Aller à la page à propos">A PROPOS</a></li>
+                    <li class="__nav-li"><a href="/articles" aria-label="Aller à la page articles">ARTICLES</a></li>
+                    <li class="__nav-li"><a href="/lexique" aria-label="Aller à la page Lexique">LEXIQUE</a></li>
+                    <li class="__nav-li"><a href="/contact" aria-label="Aller à la page contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>

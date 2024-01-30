@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+        <main>
+            <h2 class="__main-title">Le blog en lien avec la nature</h2>
+            <h3 class="__main-subtitle">Des articles sur tous les sujets traités sous un angle environnemental</h3>
+            
+            <div class="container-carousel">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="slides-container">
+                            <figure class="carousel-slide" id="slide1">
+                                <img src="<%= articleData[articleData.length -1].img %>" alt="<%= articleData[articleData.length -1].img_alt %>">
+                                <figcaption class="caption" id="caption1"><a href="/article/<%= articleData.length %>"><%= articleData[articleData.length -1].title %></a></figcaption>
+                            </figure>
+                            <figure class="carousel-slide" id="slide2">
+                                <img src="<%= articleData[articleData.length -2].img %>" alt="<%= articleData[articleData.length -2].img_alt %>">
+                                <figcaption class="caption" id="caption2"><a href="/article/<%= articleData.length -1 %>"><%= articleData[articleData.length -2].title %></a></figcaption>
+                            </figure>
+                            <figure class="carousel-slide" id="slide3">
+                                <img src="<%= articleData[articleData.length -3].img %>" alt="<%= articleData[articleData.length -3].img_alt %>">
+                                <figcaption class="caption" id="caption3"><a href="/article/<%= articleData.length -2 %>"><%= articleData[articleData.length -3].title %></a></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="control" id="prev"><</button>
+                        <button class="control" id="next">></button>
+                    </div>
+                    <div class="indicators">
+                        <% for (let i = 0; i < 3; i++) { %>
+                            <div class="indicator"></div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="container-article">
+                <% articleData.forEach((article, index) => { %>
+                    <div class="card-article">
+                        <article>
+                            <img src="<%= article.img %>" alt="<%= article.img_alt %>">
+                            <h3><%= article.title %></h3>
+                            <p class="__article-info">Par <%= article.author %> dans la catégorie <%= article.category %></p>
+                            <p><%= article.resume %></p>
+                            <button><a href="/article/<%= index %>" aria-label="aller à la page de l'article <%= article.title %>">LIRE L'ARTICLE</a></button>
+                        </article>
+                    </div>
+                <% }) %>
+            </div>
+        </main>
+<%- include('partials/footer') %>

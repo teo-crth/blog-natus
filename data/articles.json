@@ -1,0 +1,53 @@
+[
+    {
+        "title": "La permaculture, qu'est-ce donc exactement ?",
+        "author": "A.Beille",
+        "category": "Potager",
+        "img": "../img/permaculture.webp",
+        "img_alt": "plantes qui poussent dans des petits pots",
+        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
+        "resume": "lorem osdihfgvhdjskl",
+        "parutionDate": "2024-01-12"
+    },
+    {
+        "title": "Peut-on manger les feuilles d'un arbre ?",
+        "author": "A.Beille",
+        "category": "Arbre",
+        "img": "../img/leaves-15757_1280.webp",
+        "img_alt": "feuille d'arbre",
+        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
+        "resume": "lorem osdihfgvhdjskl",
+        "parutionDate": "2024-01-14"
+    },
+    {
+        "title": "Peut-on ouououou ?",
+        "author": "A.Beille",
+        "category": "Arbre",
+        "img": "../img/leaves-15757_1280.webp",
+        "img_alt": "feuille d'arbre",
+        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
+        "resume": "lorem osdihfgvhdjskl",
+        "parutionDate": "2024-01-16"
+    },
+    {
+        "title": "Peut-on sisisisisi ?",
+        "author": "A.Beille",
+        "category": "Arbre",
+        "img": "../img/canopee.webp",
+        "img_alt": "feuille d'arbre",
+        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
+        "resume": "lorem osdihfgvhdjskl",
+        "parutionDate": "2024-01-18"
+    },
+    {
+        "title": "Peut-on mblablabla ?",
+        "author": "A.Beille",
+        "category": "Arbre",
+        "img": "../img/permaculture.webp",
+        "img_alt": "feuille d'arbre",
+        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
+        "resume": "lorem osdihfgvhdjskl",
+        "parutionDate": "2024-01-20"
+    }
+    
+]

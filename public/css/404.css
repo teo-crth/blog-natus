@@ -1,0 +1,19 @@
+h2, h3 {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 15rem;
+}
+
+button {
+    display: flex;
+    margin: 1rem auto;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.2rem;
+    text-align: center;
+
+}
