@@ -1,42 +1,21 @@
 const express = require('express');
 const articleData = require('./data/articles.json');
 const path = require('path')
-
+const { getHomePage, getContactPage, getArticlesPage, getLexiquePage, getSingleArticle, get404Page } = require('./controllers/mainController')
 const router = express.Router();
 
 // route pour l'affichage de la page d'accueil
-router.get('/', (request, response) => {
-  response.render('index', { articleData });
-});
+router.get('/', getHomePage);
 
-router.get('/articles', (req, res)=> {
-    let URL = req.url;
-    res.render(`articles`, {URL, articleData});
-});
+router.get('/articles', getArticlesPage);
 
-router.get('/lexique', (req, res)=> {
-    let URL = req.url;
-    res.render(`lexique`, {URL, articleData});
-});
+router.get('/lexique', getLexiquePage);
 
-router.get('/contact', (req, res)=> {
-    let URL = req.url;
-    res.render(`contact`, {URL, articleData});
-});
+router.get('/contact', getContactPage);
 
-router.get('/article/:articleNumber', (request, response, next) => {
-    const articleNumber = request.params.articleNumber;
-    const selectedArticle = articleData.find((article, index) => index === parseInt(articleNumber));
-    if(!selectedArticle){
-      return next();
-    }
-    return response.render('un-article', { selectedArticle });
-});
+router.get('/article/:articleNumber', getSingleArticle);
 
+// A ENLEVER SI 404 BUG, CAR RAJOUTE APRES COUP SUITE A COURS 
+router.use(get404Page);
 
-router.use((request, response) => {
-    response.status(404).render('404', {statusCode: 404});
-});
-
-  
-  module.exports = router;
+module.exports = router;

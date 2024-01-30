@@ -53,12 +53,38 @@ const APP = {
       // Show the initial slide
       showSlide(currentIndex);
     },
-  
+    
+    tagIsClicked() {
+        const TAG = document.querySelectorAll('.category-item');
+    
+        TAG.forEach((tag) => {
+            tag.onclick = function () {
+                if (tag.id === 'tag-all-articles') {
+                    // Remove 'isClicked' class from all other category items
+                    document.querySelectorAll('.category-item').forEach((otherTag) => {
+                        if (otherTag.id !== 'tag-all-articles') {
+                            otherTag.classList.remove('isClicked');
+                            otherTag.style.backgroundColor = '';
+                        }
+                    });
+                } else {
+                    // If a specific category item is clicked, remove 'isClicked' from 'tag-all-articles'
+                    const tagAllArticles = document.getElementById('tag-all-articles');
+                    tagAllArticles.classList.remove('isClicked');
+                    tagAllArticles.style.backgroundColor = '';
+                }
+    
+                // Toggle 'isClicked' class for the clicked tag
+                tag.classList.toggle('isClicked');
+                tag.style.backgroundColor = tag.classList.contains('isClicked') ? 'darkgreen' : '';
+            };
+        });
+    },
+
     init() {
       this.DomLoaded();
+      this.tagIsClicked();
     },
   };
   
   APP.init();
-  
-  

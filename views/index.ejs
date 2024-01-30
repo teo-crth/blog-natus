@@ -36,13 +36,13 @@
             <div class="container-article">
                 <div class="unique-categories">
                     <h4 class="category-title">Catégories d'article</h4>
-                    <div class="category-item">Tous les articles</div>
+                    <div class="category-item" id="tag-all-articles">Tous les articles</div>
                     <% 
                     <!-- Creation d'un tableau avec les categories snas doublon -->
                     const uniqueCategories = [...new Set(articleData.map(article => article.category))];
             
                     uniqueCategories.forEach(category => { %>
-                        <div class="category-item"><%= category %></div>
+                        <div class="category-item" id="<%= category %>"><%= category %></div>
                     <% }) %>
                 </div>
                 
@@ -50,7 +50,7 @@
                 <% const sortedArticles = articleData.sort((a, b) => new Date(b.parutionDate) - new Date(a.parutionDate));
                 
                 sortedArticles.forEach((article, index) => { %>
-                    <div class="card-article">
+                    <div class="card-article" id="tag-<%= article.category %>">
                         <article>
                             <img src="<%= article.img %>" alt="<%= article.img_alt %>">
                             <h3><%= article.title %></h3>

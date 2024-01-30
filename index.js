@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const router = require('./router');
 const ejs = require('ejs');
-const path = require('path')
+const path = require('path');
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -24,5 +24,6 @@ app.use((request, response, next) => {
   })
 
 app.use(router);
+
 
 app.listen(PORT, () => console.log(`vous écoutez le port : ${PORT}`));
