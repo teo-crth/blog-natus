@@ -1,3 +1,10 @@
+hébergement écolo : 
+https://www.o2switch.fr/
+
+Nom de blog : 
+natus
+
+
 # A FAIRE
 
 ## GENERATEUR D'ARTICLE
@@ -13,3 +20,5 @@ Bouton pour générer l'article. Transformer ses infos en js/html et faire un fi
 ## Générateurs de cards avec les articles présents et le plus récent en premier
 
 ## Dans la section contact, laisser la possibilité d'écrire un article avec le générateur d'article mais le soumettre en approbation
+
+## FAIRE UNE SECTION ASSOCIATIONS ENVIRONNEMENTALES ET VIDEO ECOLO

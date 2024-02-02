@@ -1,6 +1,26 @@
 <%- include('partials/header') %>
 <main>
-    <h2>CONTACT</h2>
-    <p>iuygf</p>
+    <h2 class="title-contact">CONTACT</h2>
+
+    <form class="contact-form">
+        <fieldset class="form_fieldset">
+            <legend class="form-legend">Renseigner les informations</legend>
+            <div class="form-champs">
+                 <label class="form-label"  for="nom">*Nom & Prénom :</label>  
+                 <input class="form-input" type="text" name="nom" id="nom" placeholder="Paul Martin" class="champsForm" required>
+            </div>
+            <div class="form-champs">
+                 <label class="form-label" for="email">*Email :</label>  
+                 <input class="form-input" type="email" name="email" id="email" placeholder="paul.martin@gmail.com" class="champsForm" required>
+            </div>
+            <div class="form-champs">
+                 <label class="form-label"  for="message">Message :</label>    
+                 <textarea class="form-textarea" name="message" id="message" cols="30" rows="5" placeholder="Ecrivez votre message ici" class="champsForm"></textarea>
+            </div>
+            <div id="form__button__container">
+                 <button type="submit" name="Envoyer" id="submit" class="buttonContact">Envoyer</button>
+            </div>
+        </fieldset>
+    </form>
 </main>
 <%- include('partials/footer') %>

@@ -314,3 +314,12 @@ button {
     border: none;
     margin-top: 1rem;
 }
+
+.hidden {
+    display: none;
+}
+
+.isClicked {
+background-color: #508212;
+border: 2px solid orange;
+}
