@@ -4,7 +4,8 @@
 }
 
 .contact-form {
-width: 50%;
+width: 90%;
+max-width: 600px;
 background-color: white ;
 border-radius: 5px;
 border: 1px solid #8caf3b;
@@ -18,10 +19,11 @@ box-shadow: 2px 2px 5px 0px lightgray;
 
 .form_fieldset {
     border: none;
+    width: 100%;
 }
 
 .form-legend {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     text-align: center;
     font-weight: bold;
@@ -42,11 +44,18 @@ margin: 0.2rem auto 1rem auto ;
 
 .form-textarea {
     width: 100%;
+    max-width: 100%;
+    margin-top: 0.2rem;
+}
+
+.form-textarea #objet {
+    height: 2rem;
 }
 
 .form-label {
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
     color: #8caf3b;
 }
 
@@ -58,4 +67,16 @@ margin: 0.2rem auto 1rem auto ;
     padding: 0.7rem;
     font-size: 1rem;
     border-radius: 5px;
+}
+
+@media screen and (min-width: 769px) {
+    .contact-form {
+        width: 50%;
+    }
+    .form-legend {
+        font-size: 2rem;
+    }
+    .form-label {
+        font-size: 1.5rem;
+    }
 }

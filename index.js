@@ -4,6 +4,7 @@ const router = require('./router');
 const ejs = require('ejs');
 const path = require('path');
 
+
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
@@ -11,6 +12,7 @@ const articleData = require('./data/articles.json');
 
 const PORT = 3000; 
 
+app.use(express.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // mw de journalisation

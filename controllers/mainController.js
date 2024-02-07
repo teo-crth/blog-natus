@@ -1,4 +1,6 @@
+const { response } = require('express');
 const articleData = require('../data/articles.json');
+const nodemailer = require('nodemailer');
 
 const mainController = {
   getHomePage : (request, response) => { response.render('index', { articleData }) },
@@ -13,7 +15,38 @@ const mainController = {
     }
      return response.render('un-article', { selectedArticle })
   }, 
-  get404Page: (request, response)=> {response.status(404).render('404', {statusCode: 404}) }
+  get404Page: (request, response)=> {response.status(404).render('404', {statusCode: 404}) },
+  sendMail: (request, response) => {
+    const from = request.body.email;
+    const to = 'teoconrath@gmail.com';
+    const objet = request.body.objet;
+    const message = request.body.message;
+  
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'teoconrath@gmail.com', 
+        pass: 'qlst qhsa mizc fbju'
+      }
+    });
+
+    const mailOptions = {
+      from: from,
+      to: to,
+      subject: objet,
+      text: message
+    }
+    
+    transporter.sendMail(mailOptions, function(error, info) {
+      if(error){
+        console.log(error)
+      } else {
+        console.log('Email send: ' + info.response)
+      }
+      response.redirect('/contact');
+    });
+
+  }
 }
 
 module.exports = mainController;
