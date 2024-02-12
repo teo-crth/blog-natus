@@ -1,5 +1,9 @@
 <%- include('partials/header') %>
 <main>
-
+<article>
+<h2><%= selectedArticle.title %></h2>
+<img src="<%= selectedArticle.img %>" alt="<%= selectedArticle.img_alt %>">
+<p><%= selectedArticle.text %></p>
+</article>
 </main>
 <%- include('partials/footer') %>

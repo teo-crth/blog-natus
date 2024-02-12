@@ -8,10 +8,14 @@
         <link rel="icon" type="image/x-icon" href="../../public/img/perso-icon.ico" alt="une personne tenant une plante dans sa main">
         <meta name="description" content="Blog destiné à traiter tous les sujets sous l'angle environnemental et notamment faire en sorte que nos actions du quotidien aient un impact environnemental minimal voir bénéfique">
         <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-        <% if(URL == "/articles"){ %>
+        <% if(locals.cssFile){ %>
+            <link rel="stylesheet" type="text/css" href="/css/un_article.css"/>
+        <% } else if(URL == "/articles"){ %>
             <link rel="stylesheet" type="text/css" href="/css/articles.css"/>
         <% } else if(URL == "/contact"){%>
             <link rel="stylesheet" type="text/css" href="/css/contact.css"/>
+        <% } else if(URL == "/nos-allies"){%>   
+            <link rel="stylesheet" type="text/css" href="/css/nos-allies.css"/>
         <% } else if(URL == "/lexique"){%>
             <link rel="stylesheet" type="text/css" href="/css/lexique.css"/>
         <% } %>
@@ -31,6 +35,7 @@
                     <li class="__nav-li"><a href="/" aria-label="Aller à la page d'accueil">ACCUEIL</a></li>
                     <li class="__nav-li"><a href="/articles" aria-label="Aller à la page articles">ARTICLES</a></li>
                     <li class="__nav-li"><a href="/lexique" aria-label="Aller à la page Lexique">LEXIQUE</a></li>
+                    <li class="__nav-li"><a href="/nos-allies" aria-label="Aller à la page Nos aliés">NOS ALLIÉS</a></li>
                     <li class="__nav-li"><a href="/contact" aria-label="Aller à la page contact">CONTACT</a></li>
                 </ul>
             </nav>

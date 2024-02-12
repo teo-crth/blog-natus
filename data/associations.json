@@ -1,0 +1,92 @@
+[
+    {
+        "title": "ASPAS Nature",
+        "chaine": "https://www.youtube.com/@ASPASNature",
+        "img": "../img/youtubeChanels/aspas.jpg", 
+        "img_alt": "Logo de ASPAS Nature",
+        "text": "Depuis 1980, l’Association pour la protection des animaux sauvages (ASPAS) conteste sans concession toute décision qui porterait atteinte à la vie sauvage et aux milieux naturels. L’ASPAS est une association non-gouvernementale (ONG), sans but lucratif, elle se bat pour le respect de la vie sauvage et fait le choix de ne percevoir aucune subvention publique afin de conserver une totale liberté d’action. Cette indépendance politique et financière est plutôt rare dans le paysage associatif français de la protection de la nature. Ses financements proviennent des dons, des legs et des adhésions.",
+        "site": "https://www.aspas-nature.org/",
+        "categories": ["Associaton", "Animaux", "Nature", "Foret", "Jardin-forêt", "Protection de la faune et de la flore", "Préservation des milieux naturels"]
+    },
+    {
+        "title": "The SeaCleaners",
+        "chaine": "https://www.youtube.com/@TheSeaCleaners",
+        "img": "../img/youtubeChanels/seacleaners.jpg", 
+        "img_alt": "Logo de The SeaCleaners",
+        "text": "1 tonne toutes les 3 secondes : C'est le rythme auquel la pollution plastique est déversée dans les océans de nos jours. The SeaCleaners est une ONG qui propose des solutions sur terre et en mer pour protéger les océans de la pollution plastique 💪 Consultez notre chaîne YouTube pour suivre l'avancée de nos projets, des témoignages de nos équipes, des immersions dans nos événements, et bien plus encore... pour tout savoir sur notre combat ! ",
+        "site": "https://www.theseacleaners.org/fr/accueil/",
+        "categories": ["Associaton", "ONG", "Océan", "Mer", "Micro-plastique", "Protection de la faune et de la flore", "Préservation des milieux naturels", "Pollution plastique"]
+    },
+    {
+        "title": "Terre de Liens",
+        "chaine": "https://www.youtube.com/@terre-de-liens",
+        "img": "../img/youtubeChanels/terre_de_liens.jpg", 
+        "img_alt": "Logo de Terre de Liens",
+        "text": "Préserver les terres agricoles, alléger le parcours des agriculteurs qui cherchent à s'installer et développer l'agriculture biologique et paysanne : voici les engagements qui mobilisent Terre de Liens à travers 19 régions en France depuis 2003. Le mouvement s’appuie sur une dynamique citoyenne novatrice : l’épargne et les dons du public permettent d’acquérir du foncier agricole et de recréer du lien entre paysans et citoyens pour préserver les fermes à travers les générations. Ces lieux sont ensuite proposés en location à des agriculteurs pour des productions favorisant la biodiversité et le respect des sols.",
+        "site": "https://terredeliens.org/",
+        "categories": ["Associaton", "Terres agricoles", "Agriculture biologique", "Fermes", "Respect des sols"]
+    },
+    {
+        "title": "Extinction Rebellion France",
+        "chaine": "https://www.youtube.com/@ExtinctionRebellionFrance",
+        "img": "../img/youtubeChanels/extinction.jpg", 
+        "img_alt": "Logo de Extinction Rebellion",
+        "text": "Extinction Rebellion est un mouvement mondial de désobéissance civile en lutte contre l’effondrement écologique et le réchauffement climatique, lancé en octobre 2018 au Royaume-Uni. Nous sommes… vous ! Vous êtes invité‧es à nous rejoindre et à participer, si vous êtes d’accord avec nos principes et nos valeurs.",
+        "site": "https://extinctionrebellion.fr/",
+        "categories": ["Associaton", "Désobéissance civile", "Effondrement écologique", "Réchauffement climatique", "Urgence climatique"]
+    },
+    {
+        "title": "La Fresque du Climat",
+        "chaine": "https://www.youtube.com/@lafresqueduclimat139",
+        "img": "../img/youtubeChanels/fresque_climat.jpg", 
+        "img_alt": "Logo de La Fresque du Climat",
+        "text": "La Fresque du Climat est un atelier scientifique, collaboratif et créatif conçu pour sensibiliser de façon ludique au changement climatique. Avec rigueur et pédagogie, il permet en peu de temps de découvrir le fonctionnement du climat ainsi que les causes et conséquences de son dérèglement. Participer à cet atelier fait prendre conscience de la complexité du changement climatique, donne une vision d’ensemble de cette vaste problématique et fournit des clés de compréhension pour agir efficacement. En plus d’apporter des connaissances scientifiques, la Fresque du Climat développe la créativité et les compétences humaines des participants. Cet outil a été conçu et partagé en Creative Commons par Cédric Ringenbac",
+        "site": "https://fresqueduclimat.org/",
+        "categories": ["Associaton", "Effondrement écologique", "Réchauffement climatique", "Dérèglement climatique", "enjeux climatiques"]
+    },
+    {
+        "title": "Générations Futures",
+        "chaine": "https://www.youtube.com/@generationsfutures5230",
+        "img": "../img/youtubeChanels/generations_futures.jpg", 
+        "img_alt": "Logo des Générations Futures",
+        "text": "Générations Futures est une association de défense de l’environnement agréée par le ministère de l’Ecologie depuis 2008  (renouvellement obtenu en 2014, 2019 et 2023), et reconnue d’intérêt générale. Générations Futures a pour objectifs de dénoncer les effets néfastes des polluants chimiques en général et des pesticides en particulier et de promouvoir leurs alternatives au premier rang desquelles la bio. L’association a été fondée en 1996 (anciennement nommée le Mouvement pour les Droits et le Respect des Générations Futures ou MDRGF) par un ingénieur agronome, Georges Toutain, et un enseignant, François Veillerette, coauteur de l’ouvrage de référence « Pesticides, révélations sur un scandale français », paru chez Fayard en 2007.",
+        "site": "https://www.generations-futures.fr/",
+        "categories": ["Associaton", "polluants environnementaux", "pesticides perturbateurs endocriniens", "Produits bios", "Zéro phyto 100% bio" ]
+    },
+    {
+        "title": "Anticor Officiel",
+        "chaine": "https://www.youtube.com/@AnticorOfficiel",
+        "img": "../img/youtubeChanels/anticor.jpg", 
+        "img_alt": "Logo d'Anticor",
+        "text": "ANTICOR est une association fondée en juin 2002 par Éric Halphen et Séverine Tessier pour lutter contre la corruption et rétablir l’éthique en politique. Son ambition est de réhabiliter le rapport de confiance qui doit exister entre les citoyens et leurs représentants, politiques et administratifs. L’association regroupe des citoyens et des élus de toutes tendances politiques engagés pour faire respecter les exigences démocratiques non partisanes.",
+        "site": "https://www.anticor.org/",
+        "categories": ["Associaton", "Lutte Anticorruption", "éthique", "Autorité pour la Transparence de la Vie Publique (HATVP)", "Politique"]
+    },
+    {
+        "title": "Humanité et Biodiversité",
+        "chaine": "https://www.youtube.com/@humaniteetbiodiversite8696",
+        "img": "../img/youtubeChanels/humanite_biodiversite.jpg", 
+        "img_alt": "Logo de Humanité et Biodiversité",
+        "text": "L’espèce humaine est un élément de la biodiversité et en dépend au quotidien. La biodiversité est l’un des fondements de notre bien-être et de notre économie. Elle est vitale. Elle nous est vitale. Si de nombreux efforts ont été entrepris, elle reste néanmoins plus que jamais en danger. Or, aujourd’hui et surtout demain, les humains risquent de ne plus se sentir liés au reste du vivant. Nous devons donc, ensemble, intensifier notre action.",
+        "site": "www.humanite-biodiversite.fr",
+        "categories": ["Associaton", "Biodiversité", "Végétaux", "Diversité du vivant"]
+    },
+    {
+        "title": "Mouvement Colibris",
+        "chaine": "https://www.youtube.com/@mvtcolibris/videos",
+        "img": "../img/youtubeChanels/colibris.jpg", 
+        "img_alt": "Logo du Mouvement Colibris",
+        "text": "Inspirer, relier et soutenir les citoyens qui font le choix d’un autre mode de vie ! Créé en 2007 sous l’impulsion de Pierre Rabhi, Colibris se mobilise pour  la construction d’une société écologique et humaine. L’association  place le changement personnel au cœur de sa raison d’être, convaincue  que la transformation de la société est totalement subordonnée au  changement humain. Colibris s’est donné pour mission d’inspirer, relier  et soutenir les citoyens engagés dans une démarche de transition  individuelle et collective.",
+        "site": "https://www.colibris-lemouvement.org/",
+        "categories": ["Mouvement", "Colibris", "Actions collectives", "Mouvement citoyen", "Société écologique et solidaire"]
+    },
+    {
+        "title": "Amis de la terre",
+        "chaine": "https://www.youtube.com/@AmisdelaTerreFrance",
+        "img": "../img/youtubeChanels/amis_de_la_terre.jpg", 
+        "img_alt": "Logo des Amis de la terre",
+        "text": "La fédération des Amis de la Terre France a été créée en 1970 par des citoyen·nes qui prennent conscience des impacts du modèle de société en train de s’imposer, et décident alors de s’engager pour changer le système.",
+        "site": "https://www.amisdelaterre.org/",
+        "categories": ["Association", "Colibris", "Actions collectives", "Mouvement citoyen", "Société écologique et solidaire"]
+    }
+]

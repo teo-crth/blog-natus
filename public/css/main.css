@@ -17,10 +17,6 @@ a {
     color: #8caf3b;
     text-decoration: none;
 }
-  
-a:hover, a:focus {
-    color: #508212;
-}
 
 main  {
     width: 85%;
@@ -84,6 +80,14 @@ article button:hover {
     font-size: 1rem;
     text-align: center;
     margin: 0.6rem;
+}
+
+.__nav-li a:hover {
+    color: #8caf3b;
+}
+
+.category-item:hover {
+    transform: translate(0,-3px);
 }
 
 

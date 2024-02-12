@@ -1,0 +1,93 @@
+[
+    {
+        "title": "L'ArchiPelle",
+        "chaine": "https://www.youtube.com/@larchipelle",
+        "img": "../img/youtubeChanels/archipelle_logo_176px.jpg", 
+        "img_alt": "Logo de l'archipelle",
+        "text": "L'ArchiPelle part à la rencontre d'experts ou passionnés sur les thèmes de l'autonomie d'énergie, la maison autonome, la résilience, la construction écologique, la forêt comestible et la permaculture. La chaîne regroupe des centaines de reportages partout en France afin de répondre à une demande d'apprentissage de plus en plus grandissante de la part de néo-autonomistes désireux d'aborder ce mode de vie. Le point fort de la chaîne est que le format n'est pas défini, les vidéos peuvent durer plusieurs minutes ou plusieurs heures selon le sujet et les informations à diffuser.",
+        "site": "https://larchipelle.fr/?from=natus",
+        "categories": ["Permaculture", "Autonomie", "Potager", "Panneaux solaire", "Rénovation écologique", "Construction écologique"]
+    },
+    {
+        "title": "Permaculture agroécologie etc...",
+        "chaine": "www.youtube.com/@permacultureetc",
+        "img": "../img/youtubeChanels/permaculture_etc.jpg", 
+        "img_alt": "Logo de Permaculture agroécologie etc...",
+        "text": "De nombreuses vidéos avec de la permaculture, de l'agroécologie, des idées, de l'autonomie, de l'écologie, un peu de jardinage, un zeste de construction, des tutoriels, du potager, de la forêt, quelques bafouilles, des montages vidéos approximatifs et du Etc... voilà !",
+        "site": "http://www.permacultureetc.com/",
+        "categories": ["Permaculture", "Agroécologie", "Potager", "Jardinnage", "Forêt comestible", "Verger-Potager"]
+    },
+    {
+        "title": "Le Chemin de la Nature",
+        "chaine": "https://www.youtube.com/@LeChemindelaNature-LaChaine",
+        "img": "../img/youtubeChanels/chemin_de_la_nature.jpg", 
+        "img_alt": "Logo de Le Chemin de la Nature",
+        "text": "Vous aimez les plantes sauvages, les champignons et la nature en général ? Cette chaîne Youtube fondée par Christophe de Hody est faite pour vous ! Le Chemin de la Nature vous propose des centaines de vidéos gratuites et accessibles pour découvrir les plantes comestibles, médicinales et les champignons de façon simple et ludique ! A vous la cueillette sauvage ! 🌿🌱🍃 🍄 Nous proposons également des formations en ligne et sur le terrain pour vous transmettre les connaissances autour de la cueillette et des usages des plantes sauvages comestibles et médicinales et des champignons.",
+        "site": "https://www.lechemindelanature.com",
+        "categories": ["Cueillette", "Herboristerie", "Plantes comestible", "Recette", "Champignons", "Arbres", "Feuilles comestibles", "Botanique"]
+    },
+    {
+        "title": "Chaillot Barnabé",
+        "chaine": "https://www.youtube.com/@chaillotbarnabe/playlists",
+        "img": "../img/youtubeChanels/chaillot_barnabe.jpg", 
+        "img_alt": "Logo de Chaillot Barnabé",
+        "text": "Fabriquer en autoconstruction des systèmes simples et accessibles pour utiliser de l'énergie renouvelable.",
+        "site": "https://energie-autrement.blogspot.com/",
+        "categories": ["Lowtech", "Autonomie", "Electricité Photovoltaïque", "Chauffage", "Poele Rocket stove"]
+    },
+    {
+        "title": "Vert, le média qui annonce la couleur !",
+        "chaine": "https://www.youtube.com/@vert_le_media",
+        "img": "../img/youtubeChanels/vert.jpg", 
+        "img_alt": "Logo de Vert",
+        "text": "Vert, c'est toute l'actualité de l'écologie, chaque jour dans votre boîte mail, à prix libre !",
+        "site": "https://vert.eco/",
+        "categories": ["Média", "Ecologie", "Actualité écologique", "Climat", "Ecologie politique"]
+    },
+    {
+        "title": "Désobéissance Fertile",
+        "chaine": "https://www.youtube.com/@desobeissancefertile",
+        "img": "../img/youtubeChanels/desobeissance_fertile.jpg", 
+        "img_alt": "Logo de Désobéissance Fertile",
+        "text": "La désobéissance fertile est un mouvement dont la volonté absolue est de préserver les êtres vivants et de régénérer les écosystèmes lorsque ces derniers ont été dégradés ; cela par tous les moyens. Trois piliers fondamentaux ancrent la philosophie de la désobéissance fertile : S’intégrer dans la Nature, Aggrader les territoires, Ne pas attendre que les lois changent pour agir",
+        "site": "https://desobeissancefertile.com/",
+        "categories": ["Désobéissance Fertile", "Aggradation", "Habitât légé", "Maison en pétales", "Ecologie politique"]
+    },
+    {
+        "title": "Le potager d'Olivier",
+        "chaine": "https://www.youtube.com/@LepotagerdOlivier",
+        "img": "../img/youtubeChanels/potager_olivier.jpg", 
+        "img_alt": "Logo du potager d'Olivier",
+        "text": "Le potager d'Olivier est une chaîne de transmission de savoirs, connaissances et expériences autour du potager. Elle témoigne une expérience incarnée d'un jardinier qui essaie de cultiver au mieux des légumes, des fruits, dans une philosophie de potager naturel sans aucun intrant de synthèse, que ce soient engrais ou pesticides, herbicides, etc... Les vidéos retracent des cultures, des actualités du potager, des expériences, des avancées, des quêtes de bien faire. Au plaisir de partager cette passion dingue du sol, de la terre, du potager.",
+        "site": "",
+        "categories": ["Potager", "Poulailler", "Sol", "Amendement", "Fruits et légumes"]
+    },
+    {
+        "title": "Scop Terre vivante",
+        "chaine": "https://www.youtube.com/@TerreVivanteScop",
+        "img": "../img/youtubeChanels/terre_vivante.jpg", 
+        "img_alt": "Logo de Scop Terre vivante",
+        "text": "Terre vivante est une entreprise coopérative engagée au service de l'écologie depuis plus de 40 ans. Maison d'édition, éditeur de presse avec le magazine de jardinage bio les 4 Saisons, Centre écologique,  elle propose des solutions pratiques pour le jardinage bio, l'alimentation saine, l'habitat écologique, la santé et le bien-être. L'équipe de Terre vivante partage savoir-faire et conseils d'experts pour faire avancer l'écologie au quotidien.",
+        "site": "https://www.terrevivante.org/",
+        "categories": ["Potager", "Permaculture", "Alimentation", "Gestes écolos", "Jardinnage biologique", "Jardin"]
+    },
+    {
+        "title": "Forêt Gourmande",
+        "chaine": "https://www.youtube.com/@ForetGourmande",
+        "img": "../img/youtubeChanels/foret_gourmande.jpg", 
+        "img_alt": "Logo de Forêt Gourmande",
+        "text": "Salut à tous, nous sommes heureux de vous présenter notre chaîne consacrée au concept de jardin-forêt. La chaîne est principalement présentée par Fabrice Desjours qui est le créateur depuis 2010 d’un jardin-forêt de 2,5 hectares en Bresse bourguignonne où sont implantées un millier d'espèces alimentaires différentes. Il est formateur en jardins-forêts, conférencier et pionnier en France dans le domaine des écosystèmes comestibles. Il crée en 2018 l'association Forêt gourmande et est l’auteur d’un ouvrage consacré au sujet.",
+        "site": "https://foretgourmande.fr/",
+        "categories": ["Forêt", "Permaculture", "Alimentation", "Foret gourmande", "Jardin-forêt", "Agroforesterie", "écosystèmes comestibles"]
+    },
+    {
+        "title": "BLAST, Le souffle de l'info",
+        "chaine": "https://www.youtube.com/@blastinfo",
+        "img": "../img/youtubeChanels/blast.jpg", 
+        "img_alt": "Logo de BLAST",
+        "text": "Dans un monde où le désastre écologique nous guette, dans un pays où la majorité des médias défendent les intérêts d’une minorité, où la surenchère autoritaire du pouvoir semble ne plus avoir de limites, il est nécessaire de compter sur des médias indépendants, accessibles au plus grand nombre pour aiguiser l’esprit critique et donner envie de résister et d’agir. C’est pourquoi nous avons décidé de créer Blast. Portée par une équipe soudée, complétée par des collaborations avec des journalistes reconnus pour leur intégrité et leur engagement, Blast se développe autour de l’investigation, de la politique, de l’écologie, de la géopolitique, de l’économie, de la santé, de la justice, des luttes sociales, de l’égalité des genres, de l’antiracisme et de la culture à travers des reportages, des chroniques, des live, des émissions et des entretiens. Retrouvez la présentation de notre projet plus en détail sur la page de la campagne de financement participatif fondatrice.",
+        "site": "https://www.blast-info.fr/",
+        "categories": ["Média indépendant et citoyen", "Informations écologique", "Politique"]
+    }
+
+]

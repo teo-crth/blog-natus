@@ -1,7 +1,6 @@
 const express = require('express');
-const articleData = require('./data/articles.json');
-const path = require('path')
-const { getHomePage, getContactPage, getArticlesPage, getLexiquePage, getSingleArticle, get404Page, sendMail } = require('./controllers/mainController')
+const { getHomePage, getContactPage, getArticlesPage, getLexiquePage, getSingleArticle, get404Page, getYoutubePage } = require('./controllers/mainController');
+const { sendMail } = require('./controllers/contactFormController');
 const router = express.Router();
 
 
@@ -11,8 +10,9 @@ router.get('/articles', getArticlesPage);
 
 router.get('/lexique', getLexiquePage);
 
-router.get('/contact', getContactPage);
+router.get('/nos-allies', getYoutubePage);
 
+router.get('/contact', getContactPage);
 router.post('/contact', sendMail);
 
 // route pour l'affichage de la page d'accueil

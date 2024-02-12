@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<main>
+    <h2>Retrouvez les chaînes Youtube qui me permettent de m'informer sur l'écologie, la nature, la politique environnementale, la permaculture, le potager... Et tellement d'autres sujets.</h2>
+    <h3>Les alliés du vivant :</h3>
+
+    <div class="container-cards">
+        <% for(const chaine of youtubeChanelsData) { %>
+        <article class="container-chaine">
+        <h2><%= chaine.title %></h2>
+        <img src="<%= chaine.img %>" alt="<%= chaine.img_alt %>">
+        <p><%= chaine.text %></p>
+        
+        <div class="button-container">
+        <a href="<%= chaine.chaine %>">Chaîne Youtube</a>
+        <a href="<%= chaine.site %>">Site internet</a>
+        </div>
+        </article>
+        <% } %>
+    </div>
+</main>
+<%- include('partials/footer') %>
