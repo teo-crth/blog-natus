@@ -1,13 +1,13 @@
 <%- include('partials/header') %>
 <main>
     <h2>ARTICLES</h2>
-    <% articleData.forEach((article, index) => { %>
+    <% articleData.forEach((article) => { %>
     <article>
         <figure><img src="<%= article.img %>" alt="<%= article.img_alt %>"></figure>
         <h3 class="__article-title"><%= article.title %></h3>
         <p class="__article-resume"><%= article.resume %></p>
         <p class="__article-info">Par <%= article.author %> dans la catégorie <a href="/categorie/<%= article.category %>"><%= article.category %></a></p>
-        <button><a href="/article/<%= index %>">LIRE L'ARTICLE</a></button>
+        <button><a href="/article/<%= article.path %>">LIRE L'ARTICLE</a></button>
     </article>
 <% }) %>
 </main>

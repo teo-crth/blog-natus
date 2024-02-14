@@ -1,19 +1,20 @@
 const { response } = require('express');
 const articleData = require('../data/articles.json');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 const contactFormController = {
 sendMail: (request, response) => {
     const from = request.body.email;
-    const to = 'teoconrath@gmail.com';
+    const to = process.env.mon_email;
     const objet = request.body.objet;
     const message = request.body.message;
   
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'teoconrath@gmail.com', 
-        pass: 'qlst qhsa mizc fbju'
+        user: process.env.mon_email, 
+        pass: process.env.pass
       }
     });
 

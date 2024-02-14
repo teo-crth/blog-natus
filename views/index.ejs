@@ -9,15 +9,15 @@
                         <div class="slides-container">
                             <figure class="carousel-slide" id="slide1">
                                 <img src="<%= articleData[articleData.length -1].img %>" alt="<%= articleData[articleData.length -1].img_alt %>">
-                                <figcaption class="caption" id="caption1"><a href="/article/<%= articleData.length %>"><%= articleData[articleData.length -1].title %></a></figcaption>
+                                <figcaption class="caption" id="caption1"><a href="/article/<%= articleData[articleData.length -1].path %>"><%= articleData[articleData.length -1].title %></a></figcaption>
                             </figure>
                             <figure class="carousel-slide" id="slide2">
                                 <img src="<%= articleData[articleData.length -2].img %>" alt="<%= articleData[articleData.length -2].img_alt %>">
-                                <figcaption class="caption" id="caption2"><a href="/article/<%= articleData.length -1 %>"><%= articleData[articleData.length -2].title %></a></figcaption>
+                                <figcaption class="caption" id="caption2"><a href="/article/<%= articleData[articleData.length -2].path %>"><%= articleData[articleData.length -2].title %></a></figcaption>
                             </figure>
                             <figure class="carousel-slide" id="slide3">
                                 <img src="<%= articleData[articleData.length -3].img %>" alt="<%= articleData[articleData.length -3].img_alt %>">
-                                <figcaption class="caption" id="caption3"><a href="/article/<%= articleData.length -2 %>"><%= articleData[articleData.length -3].title %></a></figcaption>
+                                <figcaption class="caption" id="caption3"><a href="/article/<%= articleData[articleData.length -3].path %>"><%= articleData[articleData.length -3].title %></a></figcaption>
                             </figure>
                         </div>
                     </div>
@@ -48,14 +48,14 @@
 
                 <% const sortedArticles = articleData.sort((a, b) => new Date(b.parutionDate) - new Date(a.parutionDate));
                 
-                sortedArticles.forEach((article, index) => { %>
+                sortedArticles.forEach((article) => { %>
                     <div class="card-article <%= article.category %>">
                         <article>
                             <img src="<%= article.img %>" alt="<%= article.img_alt %>">
                             <h3><%= article.title %></h3>
                             <p class="__article-info">Par <%= article.author %> dans la catégorie <%= article.category %></p>
                             <p><%= article.resume %></p>
-                            <button><a href="/article/<%= index %>" aria-label="aller à la page de l'article <%= article.title %>">LIRE L'ARTICLE</a></button>
+                            <button><a href="/article/<%= article.path %>" aria-label="aller à la page de l'article <%= article.title %>">LIRE L'ARTICLE</a></button>
                         </article>
                     </div>
                 <% }) %>

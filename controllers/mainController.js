@@ -9,8 +9,8 @@ const mainController = {
   getLexiquePage: (request, response)=> { let URL = request.url; response.render(`lexique`, {URL, articleData}) },
   getYoutubePage: (request, response)=> { let URL = request.url; response.render(`nos-allies`, {URL, youtubeChanelsData }) },
   getSingleArticle: (request, response, next) => {
-    const articleNumber = request.params.articleNumber;
-    const selectedArticle = articleData.find((article, index) => index === parseInt(articleNumber));
+    const articleName = request.params.articleName;
+    const selectedArticle = articleData.find((article) => article.path === articleName.toLowerCase());
     let URL = request.url;
     if(!selectedArticle){
       return next();

@@ -2,6 +2,7 @@
     {
         "title": "La permaculture, qu'est-ce donc exactement ?",
         "author": "A.Beille",
+        "path": "la-permaculture-qu-est-ce-donc-exactement",
         "category": "Potager",
         "img": "../img/permaculture.webp",
         "img_alt": "plantes qui poussent dans des petits pots",
@@ -12,6 +13,7 @@
     {
         "title": "Peut-on manger les feuilles d'un arbre ?",
         "author": "A.Beille",
+        "path": "peut-on-manger-les-feuilles-d-un-arbre",
         "category": "Arbre",
         "img": "../img/leaves-15757_1280.webp",
         "img_alt": "feuille d'arbre",
@@ -22,6 +24,7 @@
     {
         "title": "Peut-on ouououou ?",
         "author": "A.Beille",
+        "path": "peut-on-ouououou",
         "category": "Arbre",
         "img": "../img/leaves-15757_1280.webp",
         "img_alt": "feuille d'arbre",
@@ -32,6 +35,7 @@
     {
         "title": "Peut-on sisisisisi ?",
         "author": "A.Beille",
+        "path": "peut-on-sisisisisi",
         "category": "Arbre",
         "img": "../img/canopee.webp",
         "img_alt": "feuille d'arbre",
@@ -42,6 +46,7 @@
     {
         "title": "Peut-on mblablabla ?",
         "author": "A.Beille",
+        "path": "peut-on-mblablabla",
         "category": "Arbre",
         "img": "../img/permaculture.webp",
         "img_alt": "feuille d'arbre",

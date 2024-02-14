@@ -4,7 +4,7 @@ const { sendMail } = require('./controllers/contactFormController');
 const router = express.Router();
 
 
-router.get('/article/:articleNumber', getSingleArticle);
+router.get('/article/:articleName', getSingleArticle);
 
 router.get('/articles', getArticlesPage);
 
