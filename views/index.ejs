@@ -37,7 +37,7 @@
                 <div class="unique-categories">
                     <h4 class="category-title">Catégories d'article</h4>
                     <% 
-                    <!-- Creation d'un tableau avec les categories snas doublon -->
+                    <!-- Creation d'un tableau avec les categories sans doublon -->
                     const uniqueCategories = [...new Set(articleData.map(article => article.category))];
             
                     uniqueCategories.forEach(category => { %>
@@ -52,9 +52,9 @@
                     <div class="card-article <%= article.category %>">
                         <article>
                             <img src="<%= article.img %>" alt="<%= article.img_alt %>">
-                            <h3><%= article.title %></h3>
-                            <p class="__article-info">Par <%= article.author %> dans la catégorie <%= article.category %></p>
-                            <p><%= article.resume %></p>
+                            <h3><a href="/article/<%= article.path %>"><%= article.title %></a></h3>
+                            <p class="__article-info">Par <%= article.author %> dans la catégorie <a href="/categorie/<%= article.category %>"><%= article.category %></a></p>
+                            <p><%- article.resume %></p>
                             <button><a href="/article/<%= article.path %>" aria-label="aller à la page de l'article <%= article.title %>">LIRE L'ARTICLE</a></button>
                         </article>
                     </div>

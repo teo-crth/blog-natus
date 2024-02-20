@@ -303,7 +303,7 @@ footer{
     width: 100%;
 }
 
- .card-article h3, p, button {
+ .card-article h3,  .card-article p,  .card-article button {
     margin: 0.5rem;
 } 
 

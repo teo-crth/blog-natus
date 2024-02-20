@@ -1,6 +1,6 @@
-
-h2 {
-    margin-bottom: 1rem;
+.title {
+    text-align: center;
+    margin: 2rem;
 }
 
 
@@ -11,12 +11,14 @@ dt {
     margin-bottom: 0.5rem;
     text-decoration: underline;
     color: darkgreen;
+    letter-spacing: 1px;
 
 }
 
 dd {
     font-size: 1rem;
     margin-bottom: 2rem;
+    line-height: 2rem;
 }
 
 li {

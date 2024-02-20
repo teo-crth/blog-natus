@@ -1,0 +1,52 @@
+h2 {
+    text-align: center;
+    margin: 2rem;
+}
+
+
+/**********CARD ARTICLE************/
+
+.container-article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-article {
+    width: 400px;
+    box-shadow: 2px 2px 5px 0px lightgray;
+    border: 1px solid #508212;
+    margin: 1rem;
+    
+}
+
+.card-article img {
+    width: 100%;
+}
+
+ .card-article h3,  .card-article p,  .card-article button {
+    margin: 0.5rem;
+} 
+
+.__article-info {
+    font-style: italic;
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 0.5rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.isClicked {
+background-color: #508212;
+border: 2px solid orange;
+}

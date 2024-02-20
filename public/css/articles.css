@@ -1,3 +1,9 @@
+.title {
+    text-align: center;
+    margin: 2rem;
+}
+
+
 figure {
     width: 100%;
     margin: 2rem 0;

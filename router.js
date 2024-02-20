@@ -1,5 +1,5 @@
 const express = require('express');
-const { getHomePage, getContactPage, getArticlesPage, getLexiquePage, getSingleArticle, get404Page, getYoutubePage } = require('./controllers/mainController');
+const { getHomePage, getContactPage, getArticlesPage, getLexiquePage, getSingleArticle, get404Page, getYoutubePage, getCategoryPage } = require('./controllers/mainController');
 const { sendMail } = require('./controllers/contactFormController');
 const router = express.Router();
 
@@ -12,6 +12,7 @@ router.get('/lexique', getLexiquePage);
 
 router.get('/nos-allies', getYoutubePage);
 
+router.get('/categorie/:categoryArticle', getCategoryPage)
 router.get('/contact', getContactPage);
 router.post('/contact', sendMail);
 

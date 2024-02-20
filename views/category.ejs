@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<main>
+    <h2>ARTICLES DE LA CATEGORIE : <%= categoryOfArticle.toUpperCase() %></h2>
+    <!--- CARTES DES ARTICLES -->
+    <div class="container-article">
+        <% const sortedArticles = articleData.sort((a, b) => new Date(b.parutionDate) - new Date(a.parutionDate)); %>
+        
+        <% selectedCategory.forEach((article) => { %>
+            <div class="card-article <%= article.category %>">
+                <article>
+                    <img src="<%= article.img %>" alt="<%= article.img_alt %>">
+                    <h3><a href="/article/<%= article.path %>"><%= article.title %></a></h3>
+                    <p class="__article-info">Par <%= article.author %> dans la catégorie <%= article.category %></p>
+                    <p><%- article.resume %></p>
+                    <button><a href="/article/<%= article.path %>" aria-label="aller à la page de l'article <%= article.title %>">LIRE L'ARTICLE</a></button>
+                </article>
+            </div>
+        <% }) %>
+    </div>
+</main>
+<%- include('partials/footer') %>

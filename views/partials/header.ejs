@@ -8,8 +8,10 @@
         <link rel="icon" type="image/x-icon" href="../../public/img/perso-icon.ico" alt="une personne tenant une plante dans sa main">
         <meta name="description" content="Blog destiné à traiter tous les sujets sous l'angle environnemental et notamment faire en sorte que nos actions du quotidien aient un impact environnemental minimal voir bénéfique">
         <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-        <% if(locals.cssFile){ %>
+        <% if(locals.cssFileUnArticle){ %>
             <link rel="stylesheet" type="text/css" href="/css/un_article.css"/>
+        <% } else if(locals.cssFileCategory){ %>
+            <link rel="stylesheet" type="text/css" href="/css/category.css"/>    
         <% } else if(URL == "/articles"){ %>
             <link rel="stylesheet" type="text/css" href="/css/articles.css"/>
         <% } else if(URL == "/contact"){%>
