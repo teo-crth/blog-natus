@@ -1,9 +1,18 @@
+require("dotenv").config();
+
 const express = require('express');
 const app = express();
 const router = require('./router');
 const ejs = require('ejs');
 const path = require('path');
-require("dotenv").config();
+const session = require('express-session')
+
+
+
+// Local imports
+const loadUserToLocals = require('./middlewares/loadUserToLocals');
+const errorHandlers = require('./middlewares/errorHandlers');
+
 
 // Setup view engine
 app.set('view engine', 'ejs');
@@ -27,6 +36,31 @@ app.use((request, response, next) => {
 
 // Setup router
 app.use(router);
+
+// -- ERREURS --
+// middleware 404
+app.use(errorHandlers.notFound);
+// middleware formatage et affichage des erreurs
+app.use(errorHandlers.developmentErrors);
+
+// SESSIONS
+app.use(session({
+  secret: 'asdfgh789662cgbh', // clé de chiffrement on peut utiliser process.env.SESSION_SECRET
+  resave: true,
+  saveUninitialized: true,
+  cookie: { secure: false } // on définit si les cookies doivent etre envoyés uniquement via HTTPS en prod il faudra mettre true mais en local false
+}));
+
+// COOKIES
+app.use((request, response, next) => {
+  if (!request.session.cookieArray) {
+      request.session.cookieArray = []
+  }
+
+  next();
+});
+
+app.use(loadUserToLocals);
 
 
 app.listen(PORT, () => console.log(`vous écoutez le port : ${PORT}`));

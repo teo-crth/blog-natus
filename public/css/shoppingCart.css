@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-shoppingCart {
+    background-color: white;
+    box-shadow: 2px 2px 5px 0px lightgray;
+    border-radius: 0.5rem;
+}
+
+h3 {
+    margin: 1rem;
+}
+
+.button {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    background-color: #8caf3b;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem;
+}

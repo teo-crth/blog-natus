@@ -1,7 +1,7 @@
 const express = require('express');
 const { getHomePage, getContactPage, getArticlesPage, getLexiquePage, getSingleArticle, get404Page, getYoutubePage, getCategoryPage } = require('./controllers/mainController');
 const { sendMail } = require('./controllers/contactFormController');
-const { getBooksPage, getOneBookPage } = require('./controllers/ecommerceController');
+const { getBooksPage, getOneBookPage, getShoppingCart, addOrUpdate } = require('./controllers/ecommerceController');
 const router = express.Router();
 
 
@@ -13,7 +13,7 @@ router.get('/lexique', getLexiquePage);
 
 router.get('/nos-allies', getYoutubePage);
 
-router.get('/categorie/:categoryArticle', getCategoryPage)
+router.get('/categorie/:categoryArticle', getCategoryPage);
 router.get('/contact', getContactPage);
 router.post('/contact', sendMail);
 
@@ -21,6 +21,9 @@ router.post('/contact', sendMail);
 router.get('/', getHomePage);
 
 // route pour les pages ecommerce
+
+router.get('/livres/panier', getShoppingCart);
+router.get('/livres/panier/:id', addOrUpdate);
 router.get('/livres', getBooksPage);
 router.get('/livres/:id', getOneBookPage);
 

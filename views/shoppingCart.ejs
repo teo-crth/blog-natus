@@ -1,0 +1,78 @@
+<%- include('partials/header') %>
+<main>
+    <h2 class="title">Votre panier</h2>
+    <h3>
+        <% if(locals.cart?.books.length  > 0) { %>
+            <%= cartCount %> Livres dans votre panier
+            <a href="/livres/panier/destroy" class="button">Vider le panier</a>
+    <% } else { %>
+            Vous n'avez rien ajouté au panier
+    <% }  %>
+    </h3>
+    <div class="container-shoppingCart">
+        <% if (locals.cart?.books.length > 0) { %>
+            <% for( let book of cart.books ) { %>
+                <div class="cart-table-row">
+                    <div class="cart-table-row-left">
+                    <a href="/">
+                        <img
+                        src="<%= book.image %>"
+                        alt="item"
+                        class="cart-table-img"
+                        />
+                    </a>
+                    <div class="cart-item-details">
+                        <div class="cart-table-item">
+                        <a href="/livres/<%= book.id %>">
+                            <%= book.title %>
+                        </a>
+                        </div>
+                        <div class="cart-table-description">
+                        15 inch, 1TB SSD, 32GB RAM
+                        </div>
+                    </div>
+                    </div>
+                    <div class="cart-table-row-right">
+                    <div class="cart-table-actions">
+                        <a
+                        href="/livres/panier/remove/<%= book.id %> "
+                        >
+                        Supprimer
+                        </a>
+                    </div>
+                    <div>
+                        <select
+                        class="quantity"
+                        name="qty"
+                        >
+                        <option value="<%= book.qty %>">
+                            <%= book.qty %>
+                        </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <%= book.price * book.qty / 100%> &euro;
+                    </div>
+                    </div>
+                </div>
+            <% } %>
+            <% } %>
+    </div>
+    <div class="cart-buttons">
+        <a href="/livres" class="button">
+          Continuer vos achats
+        </a>
+        <% if (locals.count) { %>
+            <a href="/checkout" class="button-primary">
+              Commander
+            </a>
+        <% } %>
+
+      </div>
+</main>
+<%- include('partials/footer') %>
