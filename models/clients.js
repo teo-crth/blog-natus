@@ -25,13 +25,6 @@ Clients.init(
         password: {
             type: DataTypes.TEXT
         },
-        birthday: {
-            type: DataTypes.DATE,
-            allowNull: false
-        },
-        phone_number: {
-            type: DataTypes.INTEGER
-        },
         address_id: {
             type: DataTypes.INTEGER,
             references: {

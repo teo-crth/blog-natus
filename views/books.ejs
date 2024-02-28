@@ -12,7 +12,7 @@
                 <p class="__book-info">Edition <%= book.edition %></p>
                 <p class="__book-price"><%- book.price %> €</p>
                 
-                <button><a href="#">COMMANDER</a></button>
+                <form action="/livres/panier/<%- book.id %>" method="POST"><input class="button" value="AJOUTER AU PANIER" type="submit"></form>
             </article>
         
         <% }) %>

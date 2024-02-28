@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<main>
+    <h2>Renseigner l'adresse de livraison</h2>
+    <form action="/checkoutAddress" method="post">
+        <label for="street" required>Numéro de rue</label>
+        <input type="text" name="street" id="street" placeholder="5 rue de l'écovillage">
+
+        <label for="zipcode" required>Code postal</label>
+        <input type="number" name="zipcode" id="zipcode" placeholder="13100">
+
+        <label for="city" required>Ville</label>
+        <input type="text" name="city" id="city" placeholder="Aix-en-Provence">
+
+        <label for="country">Pays</label>
+        <input type="radio" name="country" id="country" value="France">
+
+        <label for="infos">Informations complétementaires</label>
+        <input type="text" name="infos" id="infos" placeholder="Bâtiment 12, interphone ne marche pas, il faut faire sonner la cloche 3 fois et crier 'J'aime la nature !'">
+
+        <input type="submit" value="Suivant">
+    </form>
+</main>
+<%- include('partials/footer') %>

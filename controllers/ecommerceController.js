@@ -77,6 +77,56 @@ const ecommerceController = {
         response.locals.cart = request.session.cart;
 
         response.redirect('/livres/panier');
+    },
+    // INSCRIPTION
+
+    getCheckoutPage: (request, response) => {
+        response.render(`checkout`, { cssFileCheckout: 'checkout.css' }) 
+    },
+    register: async (request, response) => {
+        try {
+            const  { firstname, lastname, email, password, passwordConfirm } = request.body;
+
+            if (!emailValidator.validate(email)) {
+                response.render('checkout', {
+                    error: 'Email invalide',
+                });
+                return;
+            }
+
+            if (password !== passwordConfirm) {
+                response.render('checkout', {
+                    error: 'Le mot de passe ne correspond pas',
+                });
+                return;
+            }
+
+            const checkUser = await Clients.findOne({   
+                where: {
+                    email: email,
+                }, 
+            });
+            if (checkUser) {
+                response.render('checkout', {
+                    error: 'Email déjà utilisé',
+                });
+                return;
+            }
+
+            const hashedPassword = await bcrypt.hash(password, 10);
+
+            const user = await Clients.create({
+               firstname,
+               lastname, 
+               email,
+               password: hashedPassword, 
+            });
+
+            response.redirect('checkoutAddress');
+        } catch (error) {
+            console.log(error);
+            response.render('checkout', { error: error.message });
+        }
     }
 }
 

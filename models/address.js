@@ -10,10 +10,7 @@ Address.init(
             autoIncrement: true,
             primaryKey: true,
         },
-        street_number: {
-            type: DataTypes.INTEGER
-        },
-        street_name: {
+        street: {
             type: DataTypes.TEXT,
             allowNull: false
         },

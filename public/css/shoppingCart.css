@@ -22,4 +22,5 @@ h3 {
     border: none;
     padding: 0.5rem;
     margin: 1rem;
+    cursor: pointer;
 }
