@@ -3,13 +3,16 @@ const app = express();
 const router = require('./router');
 const ejs = require('ejs');
 const path = require('path');
+require("dotenv").config();
 
+// Setup view engine
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
-const PORT = 3000; 
+const PORT = process.env.PORT || 3000; 
 
-app.use(express.urlencoded({extended:true}));
+// Setup body parser
+app.use(express.urlencoded({ extended:true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // mw de journalisation
@@ -22,6 +25,7 @@ app.use((request, response, next) => {
     next();
   })
 
+// Setup router
 app.use(router);
 
 

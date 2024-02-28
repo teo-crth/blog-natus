@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+<main>
+    
+    <h2 class="title">Livre : <%= book.title %></h2>
+    <div class="container-book">
+        <article class="card-book">
+            <figure><img src="./../img/livres/<%= book.image %>" alt="Première de Couverture du livre <%= book.title %>"></figure>
+            <h3 class="__book-title"><strong><%= book.title %></strong></h3>
+            <p class="__book-info">Auteur : <strong><%= book.author %></strong></p>
+            <p class="__book-info">Edition : <strong><%= book.edition %></strong></p>
+            <h4 class="__book-resume-title">Résumé :</h4>
+            <p class="__book-resume"><%= book.resume %></p>
+        </article>
+    </div>
+
+    <div class="button-container">
+        <p class="__book-price">Prix : <%- book.price %> €</p>
+        <button><a href="#">AJOUTER AU PANIER</a></button>
+        <button><a href="#">COMMANDER</a></button>
+    </div>
+</main>
+<%- include('partials/footer') %>

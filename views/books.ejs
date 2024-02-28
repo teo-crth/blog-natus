@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<main>
+    <h2 class="title">Nos Livres coup de Coeur</h2>
+    <h3>Sélection de livres pour s'informer sur l'écologie, l'environnement, la permaculture, le jardinnage ... Et s'éveiller au vivant !</h3>
+    <div class="container-book">
+        <% books.forEach((book) => { %>
+        
+            <article class="card-book">
+                <figure><img src="./img/livres/<%= book.image %>" alt="Première de Couverture du livre <%= book.title %>"></figure>
+                <h3 class="__book-title"><a href="/livres/<%= book.id %>"><%= book.title %></a></h3>
+                <p class="__book-info">Par <%= book.author %></p>
+                <p class="__book-info">Edition <%= book.edition %></p>
+                <p class="__book-price"><%- book.price %> €</p>
+                
+                <button><a href="#">COMMANDER</a></button>
+            </article>
+        
+        <% }) %>
+    </div>
+</main>
+<%- include('partials/footer') %>

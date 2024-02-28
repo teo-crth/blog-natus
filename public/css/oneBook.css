@@ -1,0 +1,62 @@
+.container-book {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.title {
+    margin: 2rem;
+    text-align: center;
+}
+
+
+figure img {
+    width: 40%;
+    float: left;
+    margin-right: 2rem;
+}
+
+.__book-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.__book-info {
+    margin: 0rem;
+    font-size: 1rem;
+}
+
+.__book-resume-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.__book-resume {
+    line-height: 1.5rem;
+}
+
+.__book-price {
+    font-weight: bold;
+    font-size: 1.5rem;}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px 0px lightgray;
+    padding: 1rem;
+
+}
+
+button {
+    width: 30%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+}

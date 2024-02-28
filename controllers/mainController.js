@@ -22,7 +22,7 @@ const mainController = {
     const selectedCategory = articleData.filter((article) => article.category.toLowerCase() === categoryOfArticle.toLowerCase());
     response.render('category', { articleData, categoryOfArticle, selectedCategory, cssFileCategory: "/css/category.css" })
   },
-  get404Page: (request, response)=> {response.status(404).render('404', {statusCode: 404}) }
+  get404Page: (request, response)=> {response.status(404).render('404', {statusCode404: 404}) }
 }
 
 module.exports = mainController;

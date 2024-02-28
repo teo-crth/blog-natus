@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch index.js"
+    "start": "node --watch index.js",
+    "db:create": "psql -U teo -d natus -f ./data/create_bdd.sql"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.37",
     "dotenv": "^16.4.4",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "nodemailer": "^6.9.9",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pg": "^8.11.3",
+    "sequelize": "^6.37.1"
   }
 }
