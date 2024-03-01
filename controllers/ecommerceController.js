@@ -47,8 +47,8 @@ const ecommerceController = {
                     book.id === found.id ? found : book
                 );
             } else {
-                booksInCart.dataValues['qty'] = 1;
-                request.session.cart.books.push(booksInCart);
+                bookToAdd.dataValues['qty'] = 1;
+                request.session.cart.books.push(bookToAdd);
             }
 
             response.redirect('/livres/panier');
