@@ -12,6 +12,7 @@ const session = require('express-session')
 // Local imports
 const loadUserToLocals = require('./middlewares/loadUserToLocals');
 const errorHandlers = require('./middlewares/errorHandlers');
+const initCart = require('./middlewares/initCart');
 
 
 // Setup view engine
@@ -34,14 +35,6 @@ app.use((request, response, next) => {
     next();
   })
 
-// Setup router
-app.use(router);
-
-// -- ERREURS --
-// middleware 404
-app.use(errorHandlers.notFound);
-// middleware formatage et affichage des erreurs
-app.use(errorHandlers.developmentErrors);
 
 // SESSIONS
 app.use(session({
@@ -50,17 +43,17 @@ app.use(session({
   saveUninitialized: true,
   cookie: { secure: false } // on définit si les cookies doivent etre envoyés uniquement via HTTPS en prod il faudra mettre true mais en local false
 }));
-
-// COOKIES
-app.use((request, response, next) => {
-  if (!request.session.cookieArray) {
-      request.session.cookieArray = []
-  }
-
-  next();
-});
-
+app.use(initCart);
 app.use(loadUserToLocals);
 
+// Setup router
+app.use(router);
+
+
+// -- ERREURS --
+// middleware 404
+app.use(errorHandlers.notFound);
+// middleware formatage et affichage des erreurs
+app.use(errorHandlers.developmentErrors);
 
 app.listen(PORT, () => console.log(`vous écoutez le port : ${PORT}`));

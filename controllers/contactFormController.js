@@ -1,5 +1,3 @@
-const { response } = require('express');
-const articleData = require('../data/articles.json');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 

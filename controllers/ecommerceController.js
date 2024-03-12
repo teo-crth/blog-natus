@@ -25,12 +25,14 @@ const ecommerceController = {
 
     // PANIER
     getShoppingCart: (request, response) => {
-        response.render(`shoppingCart`, { cssFileShoppingCart: 'shoppingCart.css' })
+        const cartCount = request.session.cart.books.length;
+        response.render(`shoppingCart`, { cartCount, cssFileShoppingCart: 'shoppingCart.css' })
     },
     addOrUpdate: async (request, response) => {
         try {
             const bookId = parseInt(request.params.id);
 
+            const cart = request.session.cart;
             const booksInCart = request.session.cart.books;
             const bookToAdd = await Books.findOne({
                 where: { id: bookId }
@@ -41,11 +43,11 @@ const ecommerceController = {
                 book => parseInt(book.id) === bookToAdd.id
             );
 
-            if (found) {
+           if (found) {
                 found['qty'] += 1;
-                request.session.cart.books = booksInCart.map(book =>
+               request.session.cart.books = booksInCart.map(book =>
                     book.id === found.id ? found : book
-                );
+               );
             } else {
                 bookToAdd.dataValues['qty'] = 1;
                 request.session.cart.books.push(bookToAdd);
@@ -73,7 +75,7 @@ const ecommerceController = {
     },
     destroy: (request, response) => {
         request.session.cart = {};
-        request.session.cart['books'] = [];
+        request.session.cart.books = [];
         response.locals.cart = request.session.cart;
 
         response.redirect('/livres/panier');

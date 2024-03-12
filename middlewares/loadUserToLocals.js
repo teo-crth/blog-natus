@@ -1,9 +1,9 @@
 // On se sert des locals pour pouvoir utiliser la variable user dans les views.
-const loadUserToLocals = (req, res, next) => {
-    if (req.session.user) {
-      res.locals.user = req.session.user;
+const loadUserToLocals = (request, response, next) => {
+    if (request.session.user) {
+      response.locals.user = request.session.user;
     } else {
-      res.locals.user = null;
+      response.locals.user = null;
     }
   
     next();

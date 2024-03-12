@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --watch index.js",
+    "build": "vite build",
     "db:create": "psql -U teo -d natus -f ./data/create_bdd.sql"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "nodemailer": "^6.9.9",
     "path": "^0.12.7",
     "pg": "^8.11.3",
-    "sequelize": "^6.37.1"
+    "sequelize": "^6.37.1",
+    "vite": "^5.1.5"
   }
 }

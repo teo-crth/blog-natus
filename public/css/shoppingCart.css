@@ -7,10 +7,20 @@
     background-color: white;
     box-shadow: 2px 2px 5px 0px lightgray;
     border-radius: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
 }
 
 h3 {
     margin: 1rem;
+}
+
+.cart-buttons {
+    margin-top: 3rem;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
 }
 
 .button {
@@ -21,6 +31,33 @@ h3 {
     color: white;
     border: none;
     padding: 0.5rem;
-    margin: 1rem;
     cursor: pointer;
+}
+
+.checkout-button {
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+.checkout-button a {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    
+
+}
+
+.cart-table-row-left img {
+    width: 20%;
+}
+
+.cart-table-item {
+    margin: 0.5rem 0;
+}
+
+.cart-table-actions {
+    margin: 0.5rem 0;
+}
+
+.cart-table-actions a {
+    color: grey;
 }

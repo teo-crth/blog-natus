@@ -6,13 +6,13 @@
         <% books.forEach((book) => { %>
         
             <article class="card-book">
-                <figure><img src="./img/livres/<%= book.image %>" alt="Première de Couverture du livre <%= book.title %>"></figure>
+                <figure><img src="/img/livres/<%= book.image %>" alt="Première de Couverture du livre <%= book.title %>"></figure>
                 <h3 class="__book-title"><a href="/livres/<%= book.id %>"><%= book.title %></a></h3>
                 <p class="__book-info">Par <%= book.author %></p>
                 <p class="__book-info">Edition <%= book.edition %></p>
                 <p class="__book-price"><%- book.price %> €</p>
                 
-                <form action="/livres/panier/<%- book.id %>" method="POST"><input class="button" value="AJOUTER AU PANIER" type="submit"></form>
+                <button><a href="/livres/panier/<%- book.id %>">AJOUTER AU PANIER</a></button>
             </article>
         
         <% }) %>
