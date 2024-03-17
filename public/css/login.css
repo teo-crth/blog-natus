@@ -1,0 +1,79 @@
+
+.container-global {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title-signup, .title-login {
+    text-align: center;
+}
+
+.signup-form, .login-form {
+width: 90%;
+max-width: 600px;
+background-color: white ;
+border-radius: 5px;
+border: 1px solid #8caf3b;
+margin: 1.5rem auto;
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+box-shadow: 2px 2px 5px 0px lightgray;
+}
+
+.form_fieldset {
+    border: none;
+    width: 100%;
+}
+
+
+.form-champs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+width: 100%;
+height: 2.5rem;
+margin: 0.2rem auto 1rem auto ;
+}
+
+.form-label {
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #8caf3b;
+}
+
+.checkout-form button {
+    margin: 1.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.submit-button {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    background-color: #8caf3b;
+    border: none;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 769px) {
+    .checkout-form {
+        width: 50%;
+    }
+
+    .form-label {
+        font-size: 1.5rem;
+    }
+}

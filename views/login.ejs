@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+<main>
+    <div class="container-global">
+        <div class="container-signup">
+            <h2 class="title-signup">INSCRIPTION</h2>
+            <form action="/login-signup" method="post" class="signup-form">
+                <fieldset class="form_fieldset">
+        
+                    <label class="form-label" for="firstname">Prénom</label>
+                    <input class="form-input" type="text" name="firstname" id="firstname" placeholder="Martine" required>
+                    <label class="form-label" for="lastname">Nom</label>
+                    <input class="form-input" type="text" name="lastname" id="lastname" placeholder="Alaplage" required>
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" type="email" name="email" id="email" placeholder="perma@culture.com" required>
+                    <label class="form-label" for="password">Mot de passe</label>
+                    <input class="form-input" type="password" name="password" id="password" placeholder="Eviter toto" required>
+                    <label class="form-label" for="passwordConfirm">Confirmation du Mot de passe</label>
+                    <input class="form-input" type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Eviter tati" required>
+        
+                    <input class="form-input submit-button signup-button" type="submit" value="S'inscrire">
+                </fieldset>
+            </form>
+        </div>
+        <div class="container-login">
+            <h2 class="title-login">CONNEXION</h2>
+            <form action="/login" method="post" class="login-form">
+                <fieldset class="form_fieldset">
+        
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" type="email" name="email" id="email" placeholder="perma@culture.com" required>
+                    <label class="form-label" for="password">Mot de passe</label>
+                    <input class="form-input" type="password" name="password" id="password" placeholder="Eviter toto" required>
+                    <input class="form-input submit-button login-button" type="submit" value="connexion">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</main>
+<%- include('partials/footer') %>

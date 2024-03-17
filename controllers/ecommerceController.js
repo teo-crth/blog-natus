@@ -19,7 +19,7 @@ const ecommerceController = {
         if(book) {
             response.render(`book`, { book, cssFileOneBook: 'book.css' }) 
         }
-        response.status(404).render(`404`, { statusCode404: 404 }) 
+        response.status(404).render(`404`, { statusCodes404: 404 }) 
         
     },
 
@@ -82,22 +82,23 @@ const ecommerceController = {
     },
     // INSCRIPTION
 
-    getCheckoutPage: (request, response) => {
-        response.render(`checkout`, { cssFileCheckout: 'checkout.css' }) 
+    getLoginPage: (request, response) => {
+        response.render('login', { cssFileLogin: 'login.css' }) 
     },
+
     register: async (request, response) => {
         try {
             const  { firstname, lastname, email, password, passwordConfirm } = request.body;
 
             if (!emailValidator.validate(email)) {
-                response.render('checkout', {
+                response.render('login', {
                     error: 'Email invalide',
                 });
                 return;
             }
 
             if (password !== passwordConfirm) {
-                response.render('checkout', {
+                response.render('login', {
                     error: 'Le mot de passe ne correspond pas',
                 });
                 return;
@@ -109,7 +110,7 @@ const ecommerceController = {
                 }, 
             });
             if (checkUser) {
-                response.render('checkout', {
+                response.render('login', {
                     error: 'Email déjà utilisé',
                 });
                 return;
@@ -127,7 +128,7 @@ const ecommerceController = {
             response.redirect('checkoutAddress');
         } catch (error) {
             console.log(error);
-            response.render('checkout', { error: error.message });
+            response.render('login', { error: error.message });
         }
     }
 }
