@@ -1,7 +1,7 @@
 const express = require('express');
 const { getHomePage, getContactPage, getArticlesPage, getLexiquePage, getSingleArticle, get404Page, getYoutubePage, getCategoryPage } = require('./controllers/mainController');
 const { sendMail } = require('./controllers/contactFormController');
-const { getBooksPage, getOneBookPage, getShoppingCart, addOrUpdate, getCheckoutPage, register, remove, getLoginPage } = require('./controllers/ecommerceController');
+const { getBooksPage, getOneBookPage, getShoppingCart, addOrUpdate, getCheckoutAddressPage, register, remove, getLoginPage } = require('./controllers/ecommerceController');
 const router = express.Router();
 
 
@@ -32,10 +32,10 @@ router.get('/livres/:id', getOneBookPage);
 
 // Login 
 router.get('/login', getLoginPage);
-router.get('/login/success', register)
+router.post('/login', register)
 
 // Routes checkout
-//router.get('/shop/checkout', getCheckoutPage);
+router.get('/shop/checkoutAddress', getCheckoutAddressPage);
 
 
 // A ENLEVER SI 404 BUG, CAR RAJOUTE APRES COUP SUITE A COURS 

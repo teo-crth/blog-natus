@@ -13,14 +13,19 @@ const ecommerceController = {
     }
     },
     getOneBookPage: async (request, response) => {
-        const idOfOneBook = request.params.id;
-        const book = await Books.findByPk(idOfOneBook);
+        try {
+            const idOfOneBook = request.params.id;
+            const book = await Books.findByPk(idOfOneBook);
 
-        if(book) {
-            response.render(`book`, { book, cssFileOneBook: 'book.css' }) 
+            if(book) {
+                response.render(`book`, { book, cssFileOneBook: 'book.css' }) 
+            }
+            response.status(404).render(`404`, { statusCodes404: 404 }) 
+            
+        } catch (error) {
+            console.log(error);
+            response.status(500).send('Server Error');
         }
-        response.status(404).render(`404`, { statusCodes404: 404 }) 
-        
     },
 
     // PANIER
@@ -80,8 +85,8 @@ const ecommerceController = {
 
         response.redirect('/livres/panier');
     },
+    
     // INSCRIPTION
-
     getLoginPage: (request, response) => {
         response.render('login', { cssFileLogin: 'login.css' }) 
     },
@@ -130,6 +135,10 @@ const ecommerceController = {
             console.log(error);
             response.render('login', { error: error.message });
         }
+    }, 
+
+    getCheckoutAddressPage: (request, response) => {
+        response.render('ckeckoutAddress', { cssFileckeckoutAddress: 'ckeckoutAddress.css' }) 
     }
 }
 
