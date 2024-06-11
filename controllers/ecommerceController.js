@@ -28,7 +28,7 @@ const ecommerceController = {
         }
     },
 
-    // PANIER
+    // Shopping cart
     getShoppingCart: (request, response) => {
         const cartCount = request.session.cart.books.length;
         response.render(`shoppingCart`, { cartCount, cssFileShoppingCart: 'shoppingCart.css' })
@@ -43,7 +43,7 @@ const ecommerceController = {
                 where: { id: bookId }
             })
 
-            // Si on a déjà le livre dans le panier, on met à jour la quantité, sinon on ajoute le produit au panier
+            // if the book is already in the shopping cart we adjust the quatity, else we add the book to the shopping cart
             const found = booksInCart.find(
                 book => parseInt(book.id) === bookToAdd.id
             );
@@ -86,7 +86,7 @@ const ecommerceController = {
         response.redirect('/livres/panier');
     },
     
-    // INSCRIPTION
+    // SIGNUP SIGNIN
     getLoginPage: (request, response) => {
         response.render('login', { cssFileLogin: 'login.css' }) 
     },

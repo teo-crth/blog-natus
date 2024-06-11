@@ -32,7 +32,7 @@ Address.init(
         client_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'Client', // Assuming the referenced model is named 'Client'
+                model: 'Client',
                 key: 'id'
             }
         },
