@@ -1,9 +1,15 @@
 
-.title-contact {
+.container-global {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title-signup, .title-login {
     text-align: center;
 }
 
-.contact-form {
+.signup-form, .login-form {
 width: 90%;
 max-width: 600px;
 background-color: white ;
@@ -22,14 +28,6 @@ box-shadow: 2px 2px 5px 0px lightgray;
     width: 100%;
 }
 
-.form-legend {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    text-align: center;
-    font-weight: bold;
-    margin: 2rem auto;
-    color: #8caf3b;
-}
 
 .form-champs {
     display: flex;
@@ -42,16 +40,6 @@ height: 2.5rem;
 margin: 0.2rem auto 1rem auto ;
 }
 
-.form-textarea {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 0.2rem;
-}
-
-.form-textarea #objet {
-    height: 2rem;
-}
-
 .form-label {
     justify-content: center;
     font-size: 1rem;
@@ -59,7 +47,7 @@ margin: 0.2rem auto 1rem auto ;
     color: #8caf3b;
 }
 
-.contact-form button {
+.checkout-form button {
     margin: 1.5rem auto 0;
     display: flex;
     justify-content: center;
@@ -67,22 +55,30 @@ margin: 0.2rem auto 1rem auto ;
     padding: 0.7rem;
     font-size: 1rem;
     border-radius: 5px;
+}
+
+.submit-button {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    background-color: #8caf3b;
+    border: none;
+    border-radius: 2px;
     cursor: pointer;
 }
 
-
-.contact-form button:hover {
-    transform: translate(0,-3px);
+.submit-button:hover {
     background-color: #508212;
+    transform: translate(0,-3px);
 }
 
 @media screen and (min-width: 769px) {
-    .contact-form {
+    .checkout-form {
         width: 50%;
     }
-    .form-legend {
-        font-size: 2rem;
-    }
+
     .form-label {
         font-size: 1.5rem;
     }

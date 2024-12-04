@@ -1,0 +1,63 @@
+<%- include('partials/header') %>
+<main>
+    <h2 class="title">Votre panier</h2>
+    <h3>
+        <% if (locals.cart && locals.cart.books && locals.cart.books.length > 0) { %>
+            <%= cartCount %> Livre(s) dans votre panier
+    <% } else { %>
+            Votre panier est vide
+    <% }  %>
+    </h3>
+    <div class="container-shoppingCart">
+        <% if (locals.cart && locals.cart.books && locals.cart.books.length > 0) { %>
+
+            <% for( let book of cart.books ) { %>
+                <div class="cart-table-row">
+                    <div class="cart-table-row-left">
+                        <a href="/">
+                            <img
+                            src="./../img/livres/<%= book.image %>"
+                            alt="Couverture du livre <%= book.title %>"
+                            class="cart-table-img"
+                            />
+                        </a>
+                        <div class="cart-item-details">
+                            <div class="cart-table-item">
+                                <a href="/livres/<%= book.id %>">
+                                    <%= book.title %>
+                                </a>
+                            </div>
+                            <div class="cart-table-description">
+                                Prix : <%= book.price %> €
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-table-row-right">
+                        <div class="cart-table-actions">
+                            <a
+                            href="/livres/panier/remove/<%= book.id %> "
+                            >
+                            Supprimer
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            <% } %>
+            <% } %>
+    </div>
+    <div class="cart-buttons">
+        <a href="/livres" class="button">
+          Continuer vos achats
+        </a>
+    </div>
+    <% if (locals.cartCount) { %>
+        <div class="cart-buttons checkout-button">
+            <a href="/login" class="button">Commander</a>
+        </div>
+    <% } %>
+
+    
+</main>
+<%- include('partials/footer') %>

@@ -1,8 +1,9 @@
 const express = require('express');
 const { getHomePage, getContactPage, getArticlesPage, getLexiquePage, getSingleArticle, get404Page, getYoutubePage, getCategoryPage } = require('./controllers/mainController');
 const { sendMail } = require('./controllers/contactFormController');
-const router = express.Router();
+const { getBooksPage, getOneBookPage, getShoppingCart, addOrUpdate, getCheckoutAddressPage, register, remove, getLoginPage } = require('./controllers/ecommerceController');
 
+const router = express.Router();
 
 router.get('/article/:articleName', getSingleArticle);
 
@@ -12,15 +13,30 @@ router.get('/lexique', getLexiquePage);
 
 router.get('/nos-allies', getYoutubePage);
 
-router.get('/categorie/:categoryArticle', getCategoryPage)
+router.get('/categorie/:categoryArticle', getCategoryPage);
 router.get('/contact', getContactPage);
 router.post('/contact', sendMail);
 
-// route pour l'affichage de la page d'accueil
 router.get('/', getHomePage);
 
+// ecommerce pages
+router.get('/livres/panier/:id', addOrUpdate);
 
-// A ENLEVER SI 404 BUG, CAR RAJOUTE APRES COUP SUITE A COURS 
+router.get('/livres/panier/remove/:id', remove);
+
+router.get('/livres/panier', getShoppingCart);
+
+router.get('/livres', getBooksPage);
+router.get('/livres/:id', getOneBookPage);
+
+// Login 
+router.get('/login', getLoginPage);
+router.post('/login', register)
+
+// checkout pages
+router.get('/shop/checkoutAddress', getCheckoutAddressPage);
+
+// 404
 router.use(get404Page);
 
 module.exports = router;

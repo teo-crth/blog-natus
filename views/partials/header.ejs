@@ -8,7 +8,11 @@
         <link rel="icon" type="image/x-icon" href="../../public/img/perso-icon.ico" alt="une personne tenant une plante dans sa main">
         <meta name="description" content="Blog destiné à traiter tous les sujets sous l'angle environnemental et notamment faire en sorte que nos actions du quotidien aient un impact environnemental minimal voir bénéfique">
         <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-        <% if(locals.cssFileUnArticle){ %>
+        <% if(locals.cssFileBooks){ %>
+            <link rel="stylesheet" type="text/css" href="/css/books.css"/>
+        <% } else if(locals.cssFileOneBook){ %>
+            <link rel="stylesheet" type="text/css" href="/css/oneBook.css"/>
+        <% } else if(locals.cssFileUnArticle){ %>    
             <link rel="stylesheet" type="text/css" href="/css/un_article.css"/>
         <% } else if(locals.cssFileCategory){ %>
             <link rel="stylesheet" type="text/css" href="/css/category.css"/>    
@@ -20,9 +24,12 @@
             <link rel="stylesheet" type="text/css" href="/css/nos-allies.css"/>
         <% } else if(URL == "/lexique"){%>
             <link rel="stylesheet" type="text/css" href="/css/lexique.css"/>
-        <% } %>
-        <% if( locals.statusCode && locals.statusCode === 404){ %>
+        <% } else if(locals.statusCode404){ %>
             <link rel="stylesheet" type="text/css" href="/css/404.css"/>
+        <% } else if(locals.cssFileShoppingCart){ %>
+                <link rel="stylesheet" type="text/css" href="/css/shoppingCart.css"/>
+        <% } else if(locals.cssFileLogin) { %>
+            <link rel="stylesheet" type="text/css" href="/css/login.css"/>
         <% } %>
         <title>Blog Natus</title>
     </head>
@@ -36,7 +43,7 @@
                 <ul>
                     <li class="__nav-li"><a href="/" aria-label="Aller à la page d'accueil">ACCUEIL</a></li>
                     <li class="__nav-li"><a href="/articles" aria-label="Aller à la page articles">ARTICLES</a></li>
-                    <li class="__nav-li"><a href="/lexique" aria-label="Aller à la page Lexique">LEXIQUE</a></li>
+                    <li class="__nav-li"><a href="/livres" aria-label="Aller à la page Shop">SHOP</a></li>
                     <li class="__nav-li"><a href="/nos-allies" aria-label="Aller à la page Nos aliés">NOS ALLIÉS</a></li>
                     <li class="__nav-li"><a href="/contact" aria-label="Aller à la page contact">CONTACT</a></li>
                 </ul>

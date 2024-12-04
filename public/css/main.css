@@ -152,6 +152,20 @@ footer{
     margin-top: 2rem;
 }
 
+.__footer-li,  .__footer-li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1.5rem;
+    list-style-type: none;
+}
+
+.__footer-li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /**********CARROUSSEL************/
 
 .container-carousel {
@@ -317,6 +331,7 @@ button {
     padding: 0.5rem;
     border: none;
     margin-top: 1rem;
+    border-radius: 0.2rem;
 }
 
 .hidden {
@@ -327,3 +342,4 @@ button {
 background-color: #508212;
 border: 2px solid orange;
 }
+
