@@ -66,6 +66,12 @@ margin: 0.2rem auto 1rem auto ;
     background-color: #8caf3b;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #508212;
+    transform: translate(0,-3px);
 }
 
 @media screen and (min-width: 769px) {

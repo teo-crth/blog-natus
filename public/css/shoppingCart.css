@@ -34,6 +34,11 @@ h3 {
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: #508212;
+    transform: translate(0,-3px);
+}
+
 .checkout-button {
     margin: 1rem auto;
     justify-content: center;
@@ -42,8 +47,11 @@ h3 {
 .checkout-button a {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
-    
+}
 
+.checkout-button a:hover {
+    background-color: #508212;
+    transform: translate(0,-3px);
 }
 
 .cart-table-row-left img {

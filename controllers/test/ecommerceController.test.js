@@ -8,7 +8,7 @@ let server;
 
 beforeAll((done) => {
     server = app.listen(PORT, () => {
-        console.log('Serveur démarré sur le port 3000');
+        console.log(`Serveur démarré sur le port ${PORT}`);
         done();
     });
 });
@@ -26,7 +26,6 @@ describe('Ecommerce Controller', () => {
     expect(response.status).toBe(200);
     expect(response.text).toContain('Nos Livres coup de Coeur')
   });
-
 
   it('should render a single book page if the book exists', async () => {
     const bookId = 1;
