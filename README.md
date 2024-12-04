@@ -10,7 +10,7 @@
 
 ## Ajout au panier possible Mais pas d'interface de paiement
 
-## Image du projet
+## Images du projet
 
 ![Accueil du blog natus](./public/img/screen-shot/accueil-natus.png)
 ![Shop du blog natus](./public/img/screen-shot/shop-natus.png)
