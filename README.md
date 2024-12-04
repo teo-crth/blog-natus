@@ -12,6 +12,6 @@
 
 ## Image du projet
 
-[Accueil du blog natus](./public/img/screen-shot/accueil-natus.png)
-[Shop du blog natus](./public/img/screen-shot/shop-natus.png)
-[Panier du blog natus](./public/img/screen-shot/panier-natus.png "Panier du blog")
+![Accueil du blog natus](./public/img/screen-shot/accueil-natus.png)
+![Shop du blog natus](./public/img/screen-shot/shop-natus.png)
+![Panier du blog natus](./public/img/screen-shot/panier-natus.png)
