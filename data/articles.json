@@ -6,8 +6,8 @@
         "category": "Potager",
         "img": "../img/permaculture.webp",
         "img_alt": "plantes qui poussent dans des petits pots",
-        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
-        "resume": "lorem osdihfgvhdjskl",
+        "text": "La permaculture est un système de conception agricole et de gestion des ressources qui cherche à imiter la nature pour créer des écosystèmes durables et résilients. Le terme « permaculture » vient de la contraction de permanent agriculture (agriculture permanente) et permanent culture (culture permanente), et il vise à concevoir des environnements humains qui fonctionnent de manière autonome et respectueuse de l'environnement.",
+        "resume": "La permaculture est une approche de conception durable inspirée de la nature. Elle consiste à créer des systèmes agricoles et des environnements humains qui sont écologiques, autosuffisants et équilibrés. Elle se base sur des principes éthiques de respect de la Terre, des personnes et du partage des ressources.",
         "parutionDate": "2024-01-12"
     },
     {
@@ -17,8 +17,8 @@
         "category": "Arbre",
         "img": "../img/leaves-15757_1280.webp",
         "img_alt": "feuille d'arbre",
-        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
-        "resume": "lorem osdihfgvhdjskl",
+        "text": "Nous avons perdu la culture de la nature à tel point que manger une feuille peut nous paraître étrange. Pourtant, il existe des feuilles d'arbres comestibles, et même très bonnes pour la santé !",
+        "resume": "Nous avons perdu la culture de la nature à tel point que manger une feuille peut nous paraître étrange. Pourtant, il existe des feuilles d'arbres comestibles, et même très bonnes pour la santé !",
         "parutionDate": "2024-01-14"
     },
     {
@@ -33,25 +33,25 @@
         "parutionDate": "2024-02-20"
     },
     {
-        "title": "Peut-on sisisisisi ?",
+        "title": "Comment prendre soin d'une forêt ?",
         "author": "A.Beille",
-        "path": "peut-on-sisisisisi",
+        "path": "comment-prendre-soin-d-une-foret",
         "category": "Arbre",
         "img": "../img/canopee.webp",
         "img_alt": "feuille d'arbre",
-        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
-        "resume": "lorem osdihfgvhdjskl",
+        "text": "Les forêts sont des écosystèmes précieux qui abritent une biodiversité incroyable et jouent un rôle clé dans la régulation du climat. Pour prendre soin d'une forêt, il est essentiel de respecter plusieurs principes. D'abord, il faut éviter la déforestation illégale et la surexploitation des ressources forestières, en privilégiant des pratiques durables comme la gestion forestière responsable. Protéger la faune et la flore locales est également primordial, ce qui peut inclure des actions comme la lutte contre les espèces invasives et la reforestation. De plus, il est important de préserver la qualité des sols et de l'eau dans la forêt en évitant la pollution et en contrôlant les incendies. Enfin, une gestion des forêts qui favorise la diversité des arbres et des plantes, et qui soutient leur régénération naturelle, permet à l'écosystème forestier de rester équilibré et sain à long terme.",
+        "resume": "Prendre soin d'une forêt implique de protéger ses ressources, de favoriser une gestion durable et de maintenir l'équilibre écologique. Cela passe par la prévention de la déforestation, la préservation de la biodiversité, et la gestion des sols et de l'eau. Les forêts doivent être protégées pour garantir leur rôle dans le climat et la biodiversité.",
         "parutionDate": "2024-01-18"
     },
     {
-        "title": "Peut-on mblablabla ?",
+        "title": "Faire des semis en hiver",
         "author": "A.Beille",
         "path": "peut-on-mblablabla",
         "category": "Arbre",
         "img": "../img/permaculture.webp",
         "img_alt": "feuille d'arbre",
-        "text": "lorem eifyu pruhd shgfyureizoql, xcghytruieosl jchvgy yruiezs,nxcbvgyu_rçeopslk,nxcbgvyè_rçeos",
-        "resume": "lorem osdihfgvhdjskl",
+        "text": "Faire des semis en hiver peut sembler difficile, mais c'est une excellente méthode pour préparer les plantations du printemps. En hiver, il est essentiel de choisir les bonnes plantes qui peuvent germer et croître dans des conditions froides, comme les légumes à racines profondes (carottes, betteraves) ou des herbes résistantes au froid (coriandre, persil). Pour réussir vos semis hivernaux, commencez par utiliser des bacs ou des plateaux de semis à l'intérieur, près d'une fenêtre ensoleillée, ou sous des lampes de croissance. Assurez-vous que le sol reste humide, mais pas détrempé, et surveillez la température pour éviter les risques de gel. En plantant à l'intérieur pendant l'hiver, vous permettez à vos plantes de prendre de l'avance et d’être prêtes à être transplantées dès que le printemps arrive.",
+        "resume": "Faire des semis en hiver consiste à semer des plantes résistantes au froid à l'intérieur ou sous des lampes de croissance. Cette méthode prépare vos plantations pour le printemps. Il est important de maintenir une température et une humidité appropriées pour assurer la germination et la croissance des jeunes plantes.",
         "parutionDate": "2024-01-20"
     }
     
